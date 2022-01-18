@@ -85,16 +85,17 @@ body {
   color: lightcoral;
 }
 
-.result {
+/* #result {
   display: inline-block;
   position: relative;
   left: 20vw;
   margin-top: 20px;
-}
+} */
 
 #result {
   margin-bottom: 15px;
   font-size: 3em;
+  margin-top: 30px;
 }
 
 #reset {
@@ -103,6 +104,10 @@ body {
   border-width: 10px;
   color: white;
   background: black;
+  position: relative;
+  left: 45%;
+  margin-top: 30px;
+  padding: 10px;
 }
 
 #reset:focus,
@@ -115,10 +120,11 @@ body {
   background: white;
 }
 
-.reset {
+/* below deleted */
+/* #reset {
   width: 150px;
   font-size: 2em;
   padding: 5px;
   position: relative;
   left: 25vw;
-}
+} */
