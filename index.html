@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Guess My Number</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- player one section -->
+    <div id="playerBox">
+      <!-- <input type="color" id="playerOneColor"></input>
+      <button id="buttonColorConfirm">
+        Confirm Color
+      </button> -->
+      <div class="playerOneSide playerBox">
+        <legend id="playerOneName">Player One</legend>
+        <input
+          type="number"
+          id="playerOne"
+          class=""
+          placeholder="Enter a number between 1 - 10, when your ready press 'Confirm'"
+          min="1"
+          max="10"
+        />
+        <button id="confirm" type="button">Confirm</button>
+        <button id="done" type="button">Done</button>
+      </div>
+
+      <!-- player two section -->
+      <div class="playerTwoSide playerBox">
+        <legend>Player Two</legend>
+        <input
+          type="number"
+          id="playerTwo"
+          placeholder="Guess the player number between 1 - 10, when ready press 'Compare"
+          min="1"
+          max="10"
+        />
+        <button id="compare" type="submit">Compare</button>
+      </div>
+    </div>
+
+    <!-- result and reset -->
+    <div class="result">
+      <h1 id="result"></h1>
+      <button id="reset" class="reset" type="button">Reset</button>
+    </div>
+
+    <!-- working on -->
+    <!-- <div>
+      <p>
+        Turns:
+        <span id="turns">20</span>
+        Left
+      </p>
+      <p id="highscore">Highscore</p>
+    </div> -->
+
+    <script src="js/localStorage.js"></script>
+  </body>
+</html>
